@@ -1,0 +1,78 @@
+
+
+
+<div id ="detail">
+<%= render "book" %>
+</div>
+
+
+
+
+
+<!-- 
+
+<br>
+<h1><center> List of Books</center></h1>
+<center>
+
+<table>
+ <thead>
+   
+
+
+   <tr>
+
+     <th><h3>Book Title</h3></th>
+     <th><h3>Author</h3></th>
+     <th><h3>Category</th></h3></th>
+     
+     
+     <th colspan="7"></th>
+
+   </tr>
+
+
+ </thead>
+ <tbody>
+
+
+
+
+
+<% @books.each do |book| %>
+
+
+ <tr>
+     
+      
+      <td class="book_title"><a href="/books/<%= book.id %>" data-toggle="popover" data-trigger="hover" data-content= <%= book.description %>>  <%= book.title %> </a></td>
+      <script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+
+
+
+</script>
+
+<div id="id_hidden" class="hidden"><%= book.description %></div>
+
+        <td><%= book.author %></td>
+
+       <td><%= book.category.name if book.category %></td>
+
+       <td><%= link_to 'Edit', edit_book_path(book) %></td>
+       
+      <td><%= link_to "Destroy", book, :method => :delete, data: { confirm: "Are you sure?" } %></td>
+       
+     </tr>
+		<h2></h2>
+ 		<% end %>
+ 		</tbody>
+		</table>
+  
+
+  </br>
+</center>
+
+ -->

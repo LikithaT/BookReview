@@ -1,0 +1,12 @@
+ $('#new_book').remove();
+ $('#new_link').show();
+
+//$("#books_index").html('<%= escape_javascript(render "/books/books_index", books: @books)%>' );
+
+
+$("#category").append('<%= j render(@book) %>');
+
+
+respond_to do |format|  
+            format.js { render 'books/update'}
+        end
