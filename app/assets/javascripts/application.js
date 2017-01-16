@@ -21,16 +21,3 @@
 //= require bootstrap-sprockets
 
 //= require_tree .
-
-// $('form').submit(function() {  
-//     var valuesToSubmit = $(this).serialize();
-//     $.ajax({
-//         type: "GET",
-//         url: $(this).attr('action'), 
-//         data: valuesToSubmit,
-//         dataType: "JSON" 
-//     }).success(function(json){
-//         console.log("success", json);
-//     });
-//     return false; 
-// });

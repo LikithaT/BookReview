@@ -52,8 +52,7 @@ end
 end
 def edit
 	@categories = Category.all.map{ |c| [c.name, c.id] }
-	format.html { redirect_to book_path(@book) }
-		format.js
+	
 end
 def update
 		@book.category_id = params[:category_id]
